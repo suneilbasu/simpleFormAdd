@@ -1,6 +1,11 @@
 <h1>New</h1>
+<div class='span6'>
 <%= form_for Mark.new do |f| %>
-  <%= f.label :news %>
-  <%= f.text_field :news %>
-  <%= f.submit "add" %>
+  <div class='message'>
+
+  <%= f.text_area :news,row: 10, cols: 100 %>
+  <span class="countdown"></span>
+  </div>
+<%= f.submit "add" %>
 <% end %>
+</div>
