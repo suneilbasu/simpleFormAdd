@@ -2,7 +2,9 @@ class MarksController < ApplicationController
   def index
   	@marks = Mark.all
   end
-
+  # def show
+  #   @marks = Mark.all
+  # end
   def new
   	@mark = Mark.new
   end
